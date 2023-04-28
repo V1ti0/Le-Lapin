@@ -2,27 +2,30 @@
     --black: #000;
     --white: #f8f8f8;
     --gray: #A29B9B;
-    --red:B60B0B;
-  }
+    --red: B60B0B;
+}
 
-  body {
-      overflow-x: hidden;
-  }
+body {
+    overflow-x: hidden;
+}
 
-  header {
-      width: 100%;
-      height: 100%;
-  }
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/img_arriere_plan/1.bureau_background.png");
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-  .intro {
-    width: 100%;
-  }
-
-  .titre {
-      font-family: 'Schoolbell', cursive;
-      font-size: 100px;
-      z-index: 4;
-      position: absolute;
-      transform: translate(450px,300px);
-      color: white;
-  }
+.titre {
+    font-family: 'Schoolbell', cursive;
+    font-size: 100px;
+    text-align: center;
+    align-self: center;
+}
