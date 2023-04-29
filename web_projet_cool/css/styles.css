@@ -70,3 +70,6 @@ section{
     to {background-position: -9000% 0%;}
 }
 
+.is-scrolling .spriteone{
+    animation-play-state: running;
+}
