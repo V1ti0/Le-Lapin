@@ -34,3 +34,7 @@ header {
     font-family: 'Schoolbell', cursive;
     font-size: 11px;
 }
+
+.scroll-icon {
+    width: 8vh;
+}
