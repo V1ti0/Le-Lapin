@@ -19,4 +19,4 @@ window.addEventListener("scroll", (delayscroll)=>{
   
     }, 1000)
   
-  }))
+  });
