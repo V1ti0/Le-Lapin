@@ -50,9 +50,103 @@ section{
     border: 1px solid#000;
 }
 
+
+
+@keyframes jump {
+    from {background-position: 0% 0%;}
+    to {background-position: -9000% 0%;}
+}
+
+.is-scrolling .spriteone{
+    animation-play-state: running;
+}
+
+#one{
+    background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
+}
+
+#two{
+ background-image: url(../img/img_arriere_plan/1.bureau_background.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ box-sizing: border-box;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+ position: relative;
+ border: 1px solid#000;
+}
+
+#three {
+ background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ box-sizing: border-box;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-direction: column;
+ position: relative;
+ border: 1px solid#000;
+}
+
+#four{
+    background-image: url(../img/img_arriere_plan/1.bureau_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
+}
+
+#five {
+    background-image: url(../img/img_arriere_plan/4.window_background_parallax.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
+}
+
+#six {
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
+}
 .spriteone{
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    border: 1px solid#000;
+
     width: 668px;
     height: 100vh;
     aspect-ratio: 1037/668;
@@ -63,13 +157,32 @@ section{
     animation-iteration-count: infinite;
     object-fit: cover;
     animation-play-state: paused;
+    position: absolute;
 }
 
-@keyframes jump {
-    from {background-position: 0% 0%;}
-    to {background-position: -9000% 0%;}
+.pencil{
+    position: absolute;
 }
 
-.is-scrolling .spriteone{
-    animation-play-state: running;
+.pen{
+    position: absolute;  
+}
+
+.pen-holder{
+    position: absolute; 
+}
+
+.le-hand{
+    position: absolute; 
+}
+
+.book{
+    position: absolute; 
+}
+
+.plane{
+    position: absolute; 
+}
+.lune{
+    position: absolute; 
 }
