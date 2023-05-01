@@ -172,6 +172,7 @@ section{
     animation-play-state: paused;
     position: absolute;
     top: 30vh;
+    z-index: 6;
 }
 
 .spritethree-bunny{
@@ -249,12 +250,27 @@ section{
 .is-scrolling .spritethree-bunny{
     animation-play-state: running;
 }
-
+.is-scrolling .spritefour-bunny{
+    animation-play-state: running;
+}
+.is-scrolling .spritefive-bunny{
+    animation-play-state: running;
+}
+.is-scrolling .spritesix-bunny{
+    animation-play-state: running;
+}
 .pencil-one{
     position: absolute;
     width: 600px;
     transform: rotate(17deg);
-    top: 65vh
+    top: 65vh;
+    z-index: 1; 
+}
+
+.paper-ball{
+    position: absolute;
+    width: 300px;
+    top: 48vh
 }
 
 .pencil-two{

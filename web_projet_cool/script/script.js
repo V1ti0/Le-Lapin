@@ -20,4 +20,39 @@ window.addEventListener("scroll", (delayscroll)=>{
   
     }, 1000)
   
-  });
+});
+
+let chapterone = gsap.timeline();
+chapterone.fromTo(".spriteone-bunny",{
+    x:"-80vw"
+},{
+    x:"0vw", duration: 4,
+})
+
+let chaptertwo = gsap.timeline();
+chaptertwo.fromTo(".pencil-one",{
+    x:"80vw"
+},{
+    x:"-80vw", duration: 2, repeat: -1,
+})
+.fromTo(".paper-ball", {
+    x:"80vw",
+},{
+    x:"-80vw", rotate: -360, duration: 8, repeat: -1,   
+});
+
+
+
+
+let chapterthree = gsap.timeline();
+
+chapterthree.fromTo(".penholder",{ 
+    x:"80vw"
+},{
+    x:"0vh", duration: 1, ease: "none"
+})
+
+
+chapterthree.to(".penholder",{ rotate: 90, duration: 1})
+
+
