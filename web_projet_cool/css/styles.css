@@ -130,8 +130,8 @@ section{
     border: 1px solid#000;
 }
 
-#six {
-    background-color: blue;
+#six { /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(67, 67, 255),lightblue);
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -325,6 +325,23 @@ section{
     top:15vh;
 }
 .plane-front{
+    position: absolute;
+    width: 2100px;
+    top:15vh;
+    z-index: 4;
+}
+
+.lune{
+    width: 800px;
+    top: 11vh;
+}
+
+.plane-back-two{
+    position: absolute;
+    width: 2100px;
+    top:15vh;
+}
+.plane-front-two{
     position: absolute;
     width: 2100px;
     top:15vh;
