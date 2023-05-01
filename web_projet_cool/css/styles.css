@@ -189,22 +189,7 @@ section{
     animation-play-state: paused;
     position: absolute;
     top: 30vh;
-}
-.spritefour-bunny{
-    background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
-    aspect-ratio: 1037/668;
-    background-size: 9000% 100%;
-    animation-name: jump;
-    animation-duration: 1s;
-    animation-timing-function: steps(90);
-    animation-iteration-count: infinite;
-    object-fit: cover;
-    animation-play-state: paused;
-    position: absolute;
-    top: 30vh;
-    z-index: 2;
+    z-index: 10;
 }
 
 .spritefive-bunny{
@@ -273,64 +258,49 @@ section{
     top: 48vh
 }
 
-.pencil-two{
-    position: absolute;
-    width: 600px;
-    transform: rotate(-60deg);
-    top: 35vh;
-    z-index: 2;
-}
 
-.pen{
-    position: absolute;
-    width: 600px;
-    transform: rotate(-80deg);
-    top: 35vh;
-    z-index: 2;
-}
-
-.pen-holder{
+.penholder{
     position: absolute; 
     width: 100vh;
-    top: 30vh;
-    z-index: 100;
+    top: 25vh;
+    z-index: 1;
 }
 
-.pen-holder_back{
-    position: absolute;  
-    z-index: 1;
-    width: 100vh;
-    top: 30vh;
+.spritefour-bunny{
+    background-image: url(../img/img_personnages/spritesheet_bunny.png);
+    width: 207.4px;
+    height: 28vh;
+    aspect-ratio: 1037/668;
+    background-size: 9000% 100%;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: steps(90);
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-play-state: paused;
+    position: absolute;
+    top: 50.5vh;
+    z-index: 2;
 }
+
+
 
 .book-back{
     position: absolute;  
-    width: 140vh;
-    top: 15vh; 
+    width: 1280px;
+    top: 30vh; 
 
 }
 
 .book-front{
     position: absolute;  
-    width: 140vh;
-    top: 15vh; 
+    width: 1280px;
+    top: 30vh; 
     z-index: 3;
 }
 
-.le-hand{
-    position: absolute; 
-    width: 110vh;
-    right: 30vw;
-    top:3vh;
-}
 
-.book{
-    position: absolute; 
-}
 
-.plane{
-    position: absolute; 
-}
 .lune{
     position: absolute; 
 }
@@ -362,4 +332,33 @@ section{
     width: 2100px;
     top:15vh;
     z-index: 4;
+}
+
+
+.le-hand{
+    background-image: url(../img/img_elements_visuels/sprite_hand.png);
+    height: 720px;
+    aspect-ratio: 1920/1080;
+    background-size: 100% 2900%;
+    animation-name: hand;
+    animation-duration: 1s;
+    animation-timing-function: steps(29);
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-play-state: paused;
+    position: absolute;
+    width: 1280px;
+    left:0;
+    top:3vh;
+}
+
+.is-scrolling .le-hand{
+    animation-play-state: running;
+}
+
+
+
+@keyframes hand {
+    from {background-position: 0% 0%;}
+    to {background-position: 0% -2900%;}
 }

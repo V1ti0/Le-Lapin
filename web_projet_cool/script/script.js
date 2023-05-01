@@ -53,6 +53,6 @@ chapterthree.fromTo(".penholder",{
 })
 
 
-chapterthree.to(".penholder",{ rotate: 90, duration: 1})
+chapterthree.to(".penholder",{ y:"10vh",rotate: 80, duration: 1})
 
 
