@@ -237,6 +237,19 @@ section{
     top: 30vh;
 }
 
+.book-back{
+    position: absolute;  
+    width: 100vh;
+    top: 35vh; 
+
+}
+
+.book-front{
+    position: absolute;  
+    width: 100vh;
+    top: 35vh; 
+}
+
 .le-hand{
     position: absolute; 
 }
