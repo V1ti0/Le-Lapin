@@ -49,10 +49,26 @@ let chapterthree = gsap.timeline();
 chapterthree.fromTo(".penholder",{ 
     x:"80vw"
 },{
-    x:"0vh", duration: 1, ease: "none"
+    x:"0vh", duration: 2, ease: "none"
 })
 
 
 chapterthree.to(".penholder",{ y:"10vh",rotate: 80, duration: 1})
 
+
+let chapterfourHAND = gsap.timeline();
+
+chapterfourHAND.fromTo(".le-hand", {
+   x:"-80vw" 
+},{
+    x:"0vw", duration: 8
+})
+
+let chapterfourBOOK = gsap.timeline();
+
+chapterfourBOOK.fromTo(".book", {
+    x:"80wv"
+},{
+    x:"0vw", duration: 5
+})
 
