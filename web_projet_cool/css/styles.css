@@ -244,6 +244,29 @@ section{
 .is-scrolling .spritesix-bunny{
     animation-play-state: running;
 }
+
+
+.text-one{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 20vh;
+    color: var(--white);
+    width: 600px;
+    text-align: center;
+}
+
+.text-two{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 25vh;
+    color: var(--white);
+    width: 600px;
+    text-align: center;
+}
+
+
 .pencil-one{
     position: absolute;
     width: 600px;
@@ -258,12 +281,33 @@ section{
     top: 48vh
 }
 
+.text-three{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 20vh;
+    color: var(--white);;
+    width: 600px;
+    text-align: center;
+}
 
 .penholder{
     position: absolute; 
     width: 100vh;
     top: 25vh;
     z-index: 1;
+}
+
+.text-four{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 2vh;
+    text-align: end;
+    color: var(--black);
+    width: 600px;
+    z-index: 200;
+    right: 5vw;
 }
 
 .spritefour-bunny{
@@ -300,6 +344,16 @@ section{
 }
 
 
+.text-five{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 30vh;
+    color: var(--white);;
+    width: 500px;
+    text-align: start;
+    left: 20vw;
+}
 
 .lune{
     position: absolute; 
@@ -334,6 +388,15 @@ section{
     z-index: 4;
 }
 
+.text-six{
+    font-family: 'Schoolbell', cursive;
+    position: absolute;
+    font-size: 2.5vh;
+    top: 33vh;
+    color: var(--white);;
+    width: 600px;
+    text-align: center;
+}
 
 .le-hand{
     background-image: url(../img/img_elements_visuels/sprite_hand.png);
