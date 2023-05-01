@@ -57,9 +57,7 @@ section{
     to {background-position: -9000% 0%;}
 }
 
-.is-scrolling .spriteone{
-    animation-play-state: running;
-}
+
 
 #one{
     background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
@@ -144,11 +142,10 @@ section{
     position: relative;
     border: 1px solid#000;
 }
-.spriteone{
+.spriteone-bunny{
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-
-    width: 668px;
-    height: 100vh;
+    width: 375px;
+    height: 50vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -158,18 +155,86 @@ section{
     object-fit: cover;
     animation-play-state: paused;
     position: absolute;
+    top: 30vh;
 }
 
-.pencil{
+.spritetwo-bunny{
+    background-image: url(../img/img_personnages/spritesheet_bunny.png);
+    width: 375px;
+    height: 50vh;
+    aspect-ratio: 1037/668;
+    background-size: 9000% 100%;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: steps(90);
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-play-state: paused;
     position: absolute;
+    top: 30vh;
+}
+
+.spritethree-bunny{
+    background-image: url(../img/img_personnages/spritesheet_bunny.png);
+    width: 375px;
+    height: 50vh;
+    aspect-ratio: 1037/668;
+    background-size: 9000% 100%;
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: steps(90);
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-play-state: paused;
+    position: absolute;
+    top: 30vh;
+}
+
+.is-scrolling .spriteone-bunny{
+    animation-play-state: running;
+}
+.is-scrolling .spritetwo-bunny{
+    animation-play-state: running;
+}
+.is-scrolling .spritethree-bunny{
+    animation-play-state: running;
+}
+
+.pencil-one{
+    position: absolute;
+    width: 600px;
+    transform: rotate(17deg);
+    top: 65vh
+}
+
+.pencil-two{
+    position: absolute;
+    width: 600px;
+    transform: rotate(-60deg);
+    top: 35vh;
+    z-index: 2;
 }
 
 .pen{
-    position: absolute;  
+    position: absolute;
+    width: 600px;
+    transform: rotate(-80deg);
+    top: 35vh;
+    z-index: 2;
 }
 
 .pen-holder{
     position: absolute; 
+    width: 100vh;
+    top: 30vh;
+    z-index: 100;
+}
+
+.pen-holder_back{
+    position: absolute;  
+    z-index: 1;
+    width: 100vh;
+    top: 30vh;
 }
 
 .le-hand{
