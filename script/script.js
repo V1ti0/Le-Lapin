@@ -26,7 +26,6 @@ window.addEventListener("scroll",   (delayscroll) => {
 
 let chapterone = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         toggleActions: "restart complete reverse reset",
         trigger: "#one",
@@ -45,7 +44,6 @@ chapterone.fromTo(".spriteone-bunny", {
 
 let chaptertwo = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         end: "+=3000px",
         toggleActions: "restart complete reverse reset",
@@ -76,7 +74,6 @@ chaptertwo.fromTo(".pencil-one", {
 
 let chapterthree = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         toggleActions: "restart complete reverse reset",
         trigger: "#three",
@@ -103,7 +100,6 @@ let chapterfourHAND = gsap.timeline();
 
 let chapterfourBOOK = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         end: "+=2000px",
         toggleActions: "restart complete reverse reset",
@@ -128,7 +124,6 @@ let chapterfourBOOK = gsap.timeline({
 
 let chapterfiveBUNNY = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         end: "+=1000px",
         toggleActions: "restart complete reverse reset",
@@ -178,7 +173,6 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
 
 let chaptersixPLANE = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         start: "top top",
         end: "+=2000px",
         toggleActions: "restart complete reverse reset",
