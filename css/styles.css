@@ -368,9 +368,9 @@ section {
     font-size: 2.5vh;
     top: 30vh;
     color: var(--white);
-    width: 40vh;
+    width: 35vh;
     text-align: start;
-    left: 10vw;
+    left: 15vw;
 }
 
 .lune {
@@ -379,31 +379,31 @@ section {
 
 .plane-back {
     position: absolute;
-    width: 2100px;
-    top: 15vh;
+    width: 230vh;
+    top: 12vh;
 }
 
 .plane-front {
     position: absolute;
-    width: 2100px;
-    top: 15vh;
+    width: 230vh;
+    top: 12vh;
     z-index: 4;
 }
 
 .lune {
-    width: 800px;
+    width: 80vh;
     top: 11vh;
 }
 
 .plane-back-two {
     position: absolute;
-    width: 2100px;
+    width: 230vh;
     top: 15vh;
 }
 
 .plane-front-two {
     position: absolute;
-    width: 2100px;
+    width: 230vh;
     top: 15vh;
     z-index: 4;
 }

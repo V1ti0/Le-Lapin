@@ -100,8 +100,8 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
     x: "-70%",
     scale: 1
 }, {
-    x: "105%",
-    y: "-31%",
+    x: "70%",
+    y: "-28%",
     scale: 0.07,
     rotate: -15,
     delay: 0.75,
@@ -117,7 +117,7 @@ chapterfivePLANE.fromTo(".paper-plane", {
     y: "0%",
     scale: 1
 }, {
-    x: "20%",
+    x: "15%",
     y: "-25%",
     scale: 0.10,
     rotate: -15,
@@ -132,7 +132,7 @@ let chaptersixPLANE = gsap.timeline();
 
 chaptersixPLANE.fromTo(".paper-plane-two", {
     x: "-100%",
-    y: "500",
+    y: "400",
     scaleX: 1,
     scale: 1,
 }, {
@@ -145,12 +145,12 @@ chaptersixPLANE.fromTo(".paper-plane-two", {
 
 chaptersixPLANE.fromTo(".paper-plane-two", {
     x: "100%",
-    y: "-300",
+    y: "-30vh",
     scaleX: -0.1,
     scale: 0.10,
 }, {
     x: "0%",
-    y: "-400",
+    y: "-52vh",
     duration: 5
 })
 
