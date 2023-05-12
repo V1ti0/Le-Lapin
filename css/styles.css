@@ -146,8 +146,8 @@ section {
 
 .spriteone-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
+    width: 45vh;
+    height: 65vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -157,13 +157,13 @@ section {
     object-fit: cover;
     animation-play-state: paused;
     position: absolute;
-    top: 30vh;
+    top: 20vh;
 }
 
 .spritetwo-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
+    width: 45vh;
+    height: 65vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -173,14 +173,14 @@ section {
     object-fit: cover;
     animation-play-state: paused;
     position: absolute;
-    top: 30vh;
+    top: 20vh;
     z-index: 6;
 }
 
 .spritethree-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
+    width: 45vh;
+    height: 65vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -196,8 +196,8 @@ section {
 
 .spritefive-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
+    width: 45vh;
+    height: 65vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -213,8 +213,8 @@ section {
 
 .spritesix-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 375px;
-    height: 50vh;
+    width: 45vh;
+    height: 65vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -258,7 +258,7 @@ section {
     font-size: 2.5vh;
     top: 20vh;
     color: var(--white);
-    width: 600px;
+    width: 50vh;
     text-align: center;
 }
 
@@ -268,13 +268,13 @@ section {
     font-size: 2.5vh;
     top: 25vh;
     color: var(--white);
-    width: 600px;
+    width: 50vh;
     text-align: center;
 }
 
 .pencil-one {
     position: absolute;
-    width: 600px;
+    width: 60vh;
     transform: rotate(17deg);
     top: 65vh;
     z-index: 1;
@@ -282,8 +282,8 @@ section {
 
 .paper-ball {
     position: absolute;
-    width: 300px;
-    top: 48vh
+    width: 35vh;
+    top: 43vh
 }
 
 .text-three {
@@ -293,14 +293,14 @@ section {
     top: 20vh;
     color: var(--white);
     ;
-    width: 600px;
+    width: 50vh;
     text-align: center;
 }
 
 .penholder {
     position: absolute;
-    width: 100vh;
-    top: 25vh;
+    width: 120vh;
+    top: 28vh;
     z-index: 1;
 }
 
@@ -311,15 +311,15 @@ section {
     top: 2vh;
     text-align: end;
     color: var(--black);
-    width: 600px;
+    width: 50vh;
     z-index: 200;
     right: 5vw;
 }
 
 .spritefour-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
-    width: 207.4px;
-    height: 28vh;
+    width: 15vh;
+    height: 23vh;
     aspect-ratio: 1037/668;
     background-size: 9000% 100%;
     animation-name: jump;
@@ -329,20 +329,36 @@ section {
     object-fit: cover;
     animation-play-state: paused;
     position: absolute;
-    top: 50.5vh;
+    top: 54vh;
     z-index: 2;
+}
+
+.le-hand {
+    background-image: url(../img/img_elements_visuels/sprite_hand.png);
+    aspect-ratio: 1920/1080;
+    background-size: 100% 2900%;
+    animation-name: hand;
+    animation-duration: 1s;
+    animation-timing-function: steps(29);
+    animation-iteration-count: infinite;
+    object-fit: cover;
+    animation-play-state: paused;
+    position: absolute;
+    width: 80vh;
+    left: 0;
+    top: 20vh;
 }
 
 .book-back {
     position: absolute;
-    width: 1280px;
-    top: 30vh;
+    width: 85vh;
+    top: 38vh;
 }
 
 .book-front {
     position: absolute;
-    width: 1280px;
-    top: 30vh;
+    width: 85vh;
+    top: 38vh;
     z-index: 3;
 }
 
@@ -352,10 +368,9 @@ section {
     font-size: 2.5vh;
     top: 30vh;
     color: var(--white);
-    ;
-    width: 500px;
+    width: 40vh;
     text-align: start;
-    left: 20vw;
+    left: 10vw;
 }
 
 .lune {
@@ -399,26 +414,8 @@ section {
     font-size: 2.5vh;
     top: 33vh;
     color: var(--white);
-    ;
-    width: 600px;
+    width: 50vh;
     text-align: center;
-}
-
-.le-hand {
-    background-image: url(../img/img_elements_visuels/sprite_hand.png);
-    height: 720px;
-    aspect-ratio: 1920/1080;
-    background-size: 100% 2900%;
-    animation-name: hand;
-    animation-duration: 1s;
-    animation-timing-function: steps(29);
-    animation-iteration-count: infinite;
-    object-fit: cover;
-    animation-play-state: paused;
-    position: absolute;
-    width: 1280px;
-    left: 0;
-    top: 3vh;
 }
 
 .is-scrolling .le-hand {
