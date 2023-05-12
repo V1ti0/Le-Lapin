@@ -144,6 +144,10 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
         backgroundPosition: "50% 100%",
         ease: "none",
     })
+    .to(".stars", {
+        yPercent: -10,
+        ease: "none"
+    })
 
 
 
