@@ -30,6 +30,7 @@ chapterone.fromTo(".spriteone-bunny", {
 })
 
 let chaptertwo = gsap.timeline();
+
 chaptertwo.fromTo(".pencil-one", {
         x: "160vw"
     }, {
@@ -49,7 +50,16 @@ chaptertwo.fromTo(".pencil-one", {
 
 
 
-let chapterthree = gsap.timeline();
+let chapterthree = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#three",
+        scrub: true,
+        pin: true,
+    }
+});
 
 chapterthree.fromTo(".penholder", {
     x: "80vw"
@@ -72,7 +82,16 @@ chapterfourHAND.fromTo(".le-hand", {
     duration: 8
 })
 
-let chapterfourBOOK = gsap.timeline();
+let chapterfourBOOK = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#four",
+        scrub: true,
+        pin: true,
+    }
+});
 
 chapterfourBOOK.fromTo(".book", {
     x: "80wv"
@@ -81,7 +100,16 @@ chapterfourBOOK.fromTo(".book", {
     duration: 5
 })
 
-let chapterfiveBUNNY = gsap.timeline();
+let chapterfiveBUNNY = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#five",
+        scrub: true,
+        pin: true,
+    }
+});
 
 chapterfiveBUNNY.fromTo(".spritefive-bunny", {
         x: "-800vh"
@@ -109,7 +137,7 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
 })
 
 
-
+/*
 let chapterfivePLANE = gsap.timeline();
 
 chapterfivePLANE.fromTo(".paper-plane", {
@@ -122,7 +150,7 @@ chapterfivePLANE.fromTo(".paper-plane", {
     scale: 0.10,
     rotate: -15,
     duration: 2
-})
+})*/
 
 var delayyPLANE = chapterfivePLANE.delay()
 
