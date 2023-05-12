@@ -37,29 +37,29 @@ header {
 
 .scroll-icon {
     width: 8vh;
-
 }
-section{
+
+section {
     margin: 0;
     width: 100vw;
     height: 100vh;
 }
 
-.kakalan{
+.kakalan {
     height: 500vh;
     border: 1px solid#000;
 }
 
-
-
 @keyframes jump {
-    from {background-position: 0% 0%;}
-    to {background-position: -9000% 0%;}
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: -9000% 0%;
+    }
 }
 
-
-
-#one{
+#one {
     background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
     aspect-ratio: 16/9;
     background-size: cover;
@@ -74,35 +74,35 @@ section{
     border: 1px solid#000;
 }
 
-#two{
- background-image: url(../img/img_arriere_plan/1.bureau_background.png);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- box-sizing: border-box;
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex-direction: column;
- position: relative;
- border: 1px solid#000;
+#two {
+    background-image: url(../img/img_arriere_plan/1.bureau_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
 }
 
 #three {
- background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- box-sizing: border-box;
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex-direction: column;
- position: relative;
- border: 1px solid#000;
+    background-image: url(../img/img_arriere_plan/2.bureau_background_horizontal.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid#000;
 }
 
-#four{
+#four {
     background-image: url(../img/img_arriere_plan/1.bureau_background.png);
     background-size: cover;
     background-position: center;
@@ -130,8 +130,9 @@ section{
     border: 1px solid#000;
 }
 
-#six { /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgb(67, 67, 255),lightblue);
+#six {
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(67, 67, 255), lightblue);
     background-size: cover;
     background-position: center;
     box-sizing: border-box;
@@ -142,7 +143,8 @@ section{
     position: relative;
     border: 1px solid#000;
 }
-.spriteone-bunny{
+
+.spriteone-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 375px;
     height: 50vh;
@@ -158,7 +160,7 @@ section{
     top: 30vh;
 }
 
-.spritetwo-bunny{
+.spritetwo-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 375px;
     height: 50vh;
@@ -175,7 +177,7 @@ section{
     z-index: 6;
 }
 
-.spritethree-bunny{
+.spritethree-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 375px;
     height: 50vh;
@@ -192,7 +194,7 @@ section{
     z-index: 10;
 }
 
-.spritefive-bunny{
+.spritefive-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 375px;
     height: 50vh;
@@ -209,7 +211,7 @@ section{
     z-index: 2;
 }
 
-.spritesix-bunny{
+.spritesix-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 375px;
     height: 50vh;
@@ -226,27 +228,31 @@ section{
     z-index: 2;
 }
 
-.is-scrolling .spriteone-bunny{
-    animation-play-state: running;
-}
-.is-scrolling .spritetwo-bunny{
-    animation-play-state: running;
-}
-.is-scrolling .spritethree-bunny{
-    animation-play-state: running;
-}
-.is-scrolling .spritefour-bunny{
-    animation-play-state: running;
-}
-.is-scrolling .spritefive-bunny{
-    animation-play-state: running;
-}
-.is-scrolling .spritesix-bunny{
+.is-scrolling .spriteone-bunny {
     animation-play-state: running;
 }
 
+.is-scrolling .spritetwo-bunny {
+    animation-play-state: running;
+}
 
-.text-one{
+.is-scrolling .spritethree-bunny {
+    animation-play-state: running;
+}
+
+.is-scrolling .spritefour-bunny {
+    animation-play-state: running;
+}
+
+.is-scrolling .spritefive-bunny {
+    animation-play-state: running;
+}
+
+.is-scrolling .spritesix-bunny {
+    animation-play-state: running;
+}
+
+.text-one {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
@@ -256,7 +262,7 @@ section{
     text-align: center;
 }
 
-.text-two{
+.text-two {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
@@ -266,39 +272,39 @@ section{
     text-align: center;
 }
 
-
-.pencil-one{
+.pencil-one {
     position: absolute;
     width: 600px;
     transform: rotate(17deg);
     top: 65vh;
-    z-index: 1; 
+    z-index: 1;
 }
 
-.paper-ball{
+.paper-ball {
     position: absolute;
     width: 300px;
     top: 48vh
 }
 
-.text-three{
+.text-three {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
     top: 20vh;
-    color: var(--white);;
+    color: var(--white);
+    ;
     width: 600px;
     text-align: center;
 }
 
-.penholder{
-    position: absolute; 
+.penholder {
+    position: absolute;
     width: 100vh;
     top: 25vh;
     z-index: 1;
 }
 
-.text-four{
+.text-four {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
@@ -310,7 +316,7 @@ section{
     right: 5vw;
 }
 
-.spritefour-bunny{
+.spritefour-bunny {
     background-image: url(../img/img_personnages/spritesheet_bunny.png);
     width: 207.4px;
     height: 28vh;
@@ -327,78 +333,78 @@ section{
     z-index: 2;
 }
 
-
-
-.book-back{
-    position: absolute;  
+.book-back {
+    position: absolute;
     width: 1280px;
-    top: 30vh; 
-
+    top: 30vh;
 }
 
-.book-front{
-    position: absolute;  
+.book-front {
+    position: absolute;
     width: 1280px;
-    top: 30vh; 
+    top: 30vh;
     z-index: 3;
 }
 
-
-.text-five{
+.text-five {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
     top: 30vh;
-    color: var(--white);;
+    color: var(--white);
+    ;
     width: 500px;
     text-align: start;
     left: 20vw;
 }
 
-.lune{
-    position: absolute; 
+.lune {
+    position: absolute;
 }
 
-.plane-back{
+.plane-back {
     position: absolute;
     width: 2100px;
-    top:15vh;
+    top: 15vh;
 }
-.plane-front{
+
+.plane-front {
     position: absolute;
     width: 2100px;
-    top:15vh;
+    top: 15vh;
     z-index: 4;
 }
 
-.lune{
+.lune {
     width: 800px;
     top: 11vh;
 }
 
-.plane-back-two{
+.plane-back-two {
     position: absolute;
     width: 2100px;
-    top:15vh;
+    top: 15vh;
 }
-.plane-front-two{
+
+.plane-front-two {
     position: absolute;
     width: 2100px;
-    top:15vh;
+    top: 15vh;
     z-index: 4;
 }
 
-.text-six{
+.text-six {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     font-size: 2.5vh;
     top: 33vh;
-    color: var(--white);;
+    color: var(--white);
+    ;
     width: 600px;
     text-align: center;
 }
 
-.le-hand{
+.le-hand {
     background-image: url(../img/img_elements_visuels/sprite_hand.png);
     height: 720px;
     aspect-ratio: 1920/1080;
@@ -411,17 +417,19 @@ section{
     animation-play-state: paused;
     position: absolute;
     width: 1280px;
-    left:0;
-    top:3vh;
+    left: 0;
+    top: 3vh;
 }
 
-.is-scrolling .le-hand{
+.is-scrolling .le-hand {
     animation-play-state: running;
 }
 
-
-
 @keyframes hand {
-    from {background-position: 0% 0%;}
-    to {background-position: 0% -2900%;}
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 0% -2900%;
+    }
 }
