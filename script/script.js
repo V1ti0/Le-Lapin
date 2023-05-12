@@ -84,9 +84,9 @@ chapterfourBOOK.fromTo(".book", {
 let chapterfiveBUNNY = gsap.timeline();
 
 chapterfiveBUNNY.fromTo(".spritefive-bunny", {
-        x: "-800%"
+        x: "-800vh"
     }, {
-        x: "-70%",
+        x: "-25vh",
         ease: "power1.out",
         duration: 3,
     })
@@ -97,11 +97,11 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
 
 
 chapterfiveBUNNY.fromTo(".spritefive-bunny", {
-    x: "-70%",
+    x: "-25vh",
     scale: 1
 }, {
-    x: "70%",
-    y: "-28%",
+    x: "20vh",
+    y: "-24vh",
     scale: 0.07,
     rotate: -15,
     delay: 0.75,
@@ -113,12 +113,12 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
 let chapterfivePLANE = gsap.timeline();
 
 chapterfivePLANE.fromTo(".paper-plane", {
-    x: "0%",
-    y: "0%",
+    x: "0vh",
+    y: "0vh",
     scale: 1
 }, {
-    x: "15%",
-    y: "-25%",
+    x: "23vh",
+    y: "-38vh",
     scale: 0.10,
     rotate: -15,
     duration: 2

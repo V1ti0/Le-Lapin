@@ -117,7 +117,7 @@ section {
 }
 
 #five {
-    background-image: url(../img/img_arriere_plan/4.window_background_parallax.png);
+    background-image: url(../img/img_arriere_plan/3.background_parallax.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -367,10 +367,25 @@ section {
     position: absolute;
     font-size: 2.5vh;
     top: 30vh;
-    color: var(--white);
+    color: var(--black);
     width: 35vh;
     text-align: start;
     left: 15vw;
+    z-index: 5;
+}
+
+.window {
+    position: absolute;
+    width: 130vh;
+    top: 12vh;
+    transform: translate(230px, 0px);
+}
+
+.stars {
+    position: absolute;
+    width: 40vh;
+    top: 32vh;
+    transform: translate(220px, 0px);
 }
 
 .lune {
