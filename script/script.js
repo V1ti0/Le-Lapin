@@ -50,7 +50,6 @@ let chaptertwo = gsap.timeline({
         end: "+=3000px",
         toggleActions: "restart complete reverse reset",
         trigger: "#two",
-        scrub: true,
         pin: true,
     }
 });
@@ -60,12 +59,14 @@ chaptertwo.fromTo(".pencil-one", {
     }, {
         x: "-120vw",
         duration: 2,
+        repeat: -1,
     })
     .fromTo(".paper-ball", {
         x: "90vw",
     }, {
         x: "-90vw",
         rotate: -360,
+        repeat: -1,
         duration: 3,
 
     }, "<");
