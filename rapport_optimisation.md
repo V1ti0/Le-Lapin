@@ -28,3 +28,7 @@ Les images n'ont pas de width ou height explicite
 changer les dimensions
 ### Résultat
 le décalage de mise en page est réduit
+
+# Rapport d’optimisation du projet ScrollyTelling après optimisation
+
+[Page Speed Insights -Rapport du 12 mai 2023, 14:20:20](https://pagespeed.web.dev/analysis/https-v1ti0-github-io-Le-Lapin/1e79x7g7dp?form_factor=desktop))
