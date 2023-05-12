@@ -21,7 +21,19 @@ window.addEventListener("scroll",   (delayscroll) => {
 
 });
 
-let chapterone = gsap.timeline();
+
+/*-------chapitre--1---*/
+
+let chapterone = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#one",
+        scrub: true,
+        pin: true,
+    }
+});
 chapterone.fromTo(".spriteone-bunny", {
     x: "-80vw"
 }, {
@@ -29,26 +41,37 @@ chapterone.fromTo(".spriteone-bunny", {
     duration: 4,
 })
 
-let chaptertwo = gsap.timeline();
+/*-------chapitre--2---*/
+
+let chaptertwo = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        end: "+=3000px",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#two",
+        scrub: true,
+        pin: true,
+    }
+});
 
 chaptertwo.fromTo(".pencil-one", {
         x: "160vw"
     }, {
         x: "-120vw",
         duration: 2,
-        repeat: -1,
     })
     .fromTo(".paper-ball", {
         x: "90vw",
     }, {
         x: "-90vw",
         rotate: -360,
-        duration: 8,
-        repeat: -1,
-    });
+        duration: 3,
+
+    }, "<");
 
 
-
+/*-------chapitre--3---*/
 
 let chapterthree = gsap.timeline({
     scrollTrigger: {
@@ -72,15 +95,10 @@ chapterthree.fromTo(".penholder", {
 
 chapterthree.to(".penholder", { y: "10vh", rotate: 80, duration: 1 })
 
+/*-------chapitre--4---*/
 
 let chapterfourHAND = gsap.timeline();
 
-chapterfourHAND.fromTo(".le-hand", {
-    x: "-80vw"
-}, {
-    x: "0vw",
-    duration: 8
-})
 
 let chapterfourBOOK = gsap.timeline({
     scrollTrigger: {
@@ -92,24 +110,30 @@ let chapterfourBOOK = gsap.timeline({
         scrub: true,
         pin: true,
     }
-});
-
-chapterfourBOOK.fromTo(".book", {
+}).fromTo(".le-hand", {
+    x: "-80vw"
+}, {
+    x: "0vw",
+    duration: 8
+}).fromTo(".book", {
     x: "80wv"
 }, {
     x: "0vw",
     duration: 5
-})
+}, "<");
+
+
+/*-------chapitre--5---*/
 
 let chapterfiveBUNNY = gsap.timeline({
     scrollTrigger: {
         markers: true,
         start: "top top",
-        end: "+=2000px",
+        end: "+=1000px",
         toggleActions: "restart complete reverse reset",
         trigger: "#five",
-        scrub: true,
         pin: true,
+        scrub: true,
     }
 });
 
@@ -118,12 +142,13 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
     }, {
         x: "-25vh",
         ease: "power1.out",
-        duration: 3,
+        duration: 2,
     })
-    .to(".spritefive-bunny", {
-        rotate: -10,
-        duration: 0.25
+    .to("#five", {
+        backgroundPosition: "50% 100%",
+        ease: "none",
     })
+
 
 
 chapterfiveBUNNY.fromTo(".spritefive-bunny", {
@@ -148,6 +173,7 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
     duration: 2
 }, "<")
 
+/*-------chapitre--6---*/
 
 let chaptersixPLANE = gsap.timeline({
     scrollTrigger: {
@@ -191,10 +217,3 @@ chaptersixPLANE.fromTo(".paper-plane-two", {
     scale: 0.10,
     duration: 5
 })
-
-chaptersixPLANE
-
-
-/*let chaptersixBUNNY = gsap.timeline();
-
-chaptersixBUNNY*/
