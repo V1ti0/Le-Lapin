@@ -117,7 +117,7 @@ let chapterfourBOOK = gsap.timeline({
     x: "0vw",
     duration: 8
 }).fromTo(".book", {
-    x: "80wv"
+    x: "80vw"
 }, {
     x: "0vw",
     duration: 5
