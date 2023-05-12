@@ -86,6 +86,7 @@ let chapterfourBOOK = gsap.timeline({
     scrollTrigger: {
         markers: true,
         start: "top top",
+        end: "+=2000px",
         toggleActions: "restart complete reverse reset",
         trigger: "#four",
         scrub: true,
@@ -104,6 +105,7 @@ let chapterfiveBUNNY = gsap.timeline({
     scrollTrigger: {
         markers: true,
         start: "top top",
+        end: "+=2000px",
         toggleActions: "restart complete reverse reset",
         trigger: "#five",
         scrub: true,
@@ -134,13 +136,7 @@ chapterfiveBUNNY.fromTo(".spritefive-bunny", {
     rotate: -15,
     delay: 0.75,
     duration: 2
-})
-
-
-/*
-let chapterfivePLANE = gsap.timeline();
-
-chapterfivePLANE.fromTo(".paper-plane", {
+}).fromTo(".paper-plane", {
     x: "0vh",
     y: "0vh",
     scale: 1
@@ -150,13 +146,20 @@ chapterfivePLANE.fromTo(".paper-plane", {
     scale: 0.10,
     rotate: -15,
     duration: 2
-})*/
+}, "<")
 
-var delayyPLANE = chapterfivePLANE.delay()
 
-chapterfivePLANE.delay(4)
-
-let chaptersixPLANE = gsap.timeline();
+let chaptersixPLANE = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "top top",
+        end: "+=2000px",
+        toggleActions: "restart complete reverse reset",
+        trigger: "#six",
+        scrub: true,
+        pin: true,
+    }
+});
 
 chaptersixPLANE.fromTo(".paper-plane-two", {
     x: "-100%",
@@ -169,9 +172,14 @@ chaptersixPLANE.fromTo(".paper-plane-two", {
     scaleX: 1,
     scale: 1,
     duration: 5
-})
-
-chaptersixPLANE.fromTo(".paper-plane-two", {
+}).fromTo(".spritesix-bunny", {
+    x: "-800%",
+    y: "600"
+}, {
+    x: "0%",
+    y: "0",
+    duration: 2
+}, "<").fromTo(".paper-plane-two", {
     x: "100%",
     y: "-30vh",
     scaleX: -0.1,
@@ -179,17 +187,14 @@ chaptersixPLANE.fromTo(".paper-plane-two", {
 }, {
     x: "0%",
     y: "-52vh",
+    scaleX: -0.1,
+    scale: 0.10,
     duration: 5
 })
 
+chaptersixPLANE
 
-let chaptersixBUNNY = gsap.timeline();
 
-chaptersixBUNNY.fromTo(".spritesix-bunny", {
-    x: "-800%",
-    y: "600"
-}, {
-    x: "0%",
-    y: "0",
-    duration: 2
-})
+/*let chaptersixBUNNY = gsap.timeline();
+
+chaptersixBUNNY*/
